@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title> 
+    <style type="text/css">	
+	#wrap{
+		display: none;
+		opacity: 0.8;
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		padding: 16px;
+		background-color: rgba(1, 1, 1, 0.725);
+		z-index: 100;
+		overflow: auto;
+	}
+	
+	#window{
+		width: 200px;
+		height: 100px;
+		margin: 50px auto;
+		display: none;
+		background: #fff;
+		z-index: 200;
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		padding: 16px;
+	}	
+</style>     
+</head>
+<body> 
+    <p>Задание 4. Реализуйте по нажатию на кнопке всплывающее окно с двумя кнопками. Первая кнопка «Опция ., вторая кнопка «Опция .. По нажатию на кнопку окно закрывается, а на странице выводится надпись «Вы выбрали опцию …» и номер выбранной опции.
+    </p> <br>
+    <button class="button1">Нажми меня</button>
+    <div id="wrap"></div>
+	<div id="window">
+	<center>
+	<div class="buttons">		
+    <button class="button2">Опция 1</button>
+    <button class="button3">Опция 2</button>
+    </div>
+	</center>
+	</div>
+    <p class="write"></p>	    		
+  
+    
+    <script src="js.js"></script>
+</body>
+</html>
